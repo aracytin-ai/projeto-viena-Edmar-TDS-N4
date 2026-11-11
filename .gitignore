@@ -1,0 +1,6 @@
+# Ficheiros temporários e do sistema
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/

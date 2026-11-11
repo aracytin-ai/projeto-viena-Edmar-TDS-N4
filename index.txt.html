@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Descobre Viena, a capital da Áustria: cultura, monumentos, música e gastronomia.">
+  <title>Viena — Capital da Áustria</title>
+  <style>
+    :root { --ink:#18233b; --muted:#65718a; --cream:#f7f5f0; --red:#b73542; --gold:#d8ad62; --white:#fff; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; font-family:Arial, Helvetica, sans-serif; color:var(--ink); background:var(--cream); line-height:1.6; }
+    header { min-height:88vh; color:white; background:linear-gradient(120deg,rgba(18,28,49,.92),rgba(91,31,43,.72)), radial-gradient(circle at 75% 25%,#d8ad62 0 8%,transparent 8.5%), linear-gradient(135deg,#263957,#8e3944 55%,#d0a35e); display:flex; flex-direction:column; }
+    nav { display:flex; justify-content:space-between; align-items:center; padding:24px 8%; gap:20px; }
+    .brand { font-weight:800; letter-spacing:2px; }
+    nav a { color:white; text-decoration:none; margin-left:20px; font-size:.95rem; }
+    nav a:hover { color:#f0cb86; }
+    .hero { width:min(900px,84%); margin:auto; padding:70px 0 110px; }
+    .eyebrow { color:#f0cb86; text-transform:uppercase; letter-spacing:3px; font-size:.8rem; font-weight:bold; }
+    h1 { font-size:clamp(3rem,8vw,6.5rem); line-height:.98; margin:18px 0; }
+    .hero p { max-width:610px; font-size:1.15rem; color:#f2edf0; }
+    .button { display:inline-block; margin-top:18px; padding:12px 22px; background:#f0cb86; color:#18233b; border-radius:4px; text-decoration:none; font-weight:bold; }
+    main { width:min(1100px,88%); margin:auto; }
+    section { padding:76px 0; }
+    .section-tag { color:var(--red); font-weight:bold; text-transform:uppercase; letter-spacing:2px; font-size:.78rem; }
+    h2 { font-size:clamp(2rem,4vw,3rem); line-height:1.1; margin:10px 0 18px; }
+    .intro { max-width:720px; color:var(--muted); }
+    .cards { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-top:30px; }
+    .card { background:white; padding:25px; border-radius:10px; box-shadow:0 8px 25px rgba(24,35,59,.06); border-top:4px solid var(--gold); }
+    .card .number { color:var(--red); font-size:.8rem; font-weight:bold; letter-spacing:2px; }
+    .card h3 { margin:8px 0; }
+    .facts { background:#18233b; color:white; border-radius:14px; padding:35px; display:grid; grid-template-columns:repeat(3,1fr); gap:25px; }
+    .fact strong { display:block; color:#f0cb86; font-size:1.7rem; }
+    .fact span { color:#d9deea; font-size:.92rem; }
+    .food { background:#eee8dd; padding:35px; border-radius:14px; }
+    footer { margin-top:30px; background:#121a2b; color:#d9deea; padding:30px 8%; text-align:center; font-size:.9rem; }
+    @media(max-width:700px) { nav { align-items:flex-start; flex-direction:column; } nav a { margin:0 14px 0 0; } .cards,.facts { grid-template-columns:1fr; } header { min-height:80vh; } }
+  </style>
+</head>
+<body>
+  <header id="inicio">
+    <nav>
+      <div class="brand">VIENA · ÁUSTRIA</div>
+      <div><a href="#sobre">Sobre</a><a href="#visitar">Visitar</a><a href="#cultura">Cultura</a></div>
+    </nav>
+    <div class="hero">
+      <div class="eyebrow">Uma cidade cheia de história</div>
+      <h1>Viena,<br>onde a história encontra a cultura.</h1>
+      <p>Viena é a capital da Áustria e uma das cidades mais conhecidas da Europa pela sua arquitetura, música clássica, cafés tradicionais e qualidade de vida.</p>
+      <a class="button" href="#sobre">Explorar a cidade</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="sobre">
+      <div class="section-tag">01 · Conhecer Viena</div>
+      <h2>Uma capital com identidade própria</h2>
+      <p class="intro">Situada junto ao rio Danúbio, Viena combina edifícios históricos com espaços modernos. Foi durante séculos um importante centro político e cultural da Europa, especialmente no período do Império Austro-Húngaro.</p>
+      <div class="facts">
+        <div class="fact"><strong>Áustria</strong><span>País de que Viena é a capital</span></div>
+        <div class="fact"><strong>Danúbio</strong><span>Rio que atravessa a cidade</span></div>
+        <div class="fact"><strong>Alemão</strong><span>Língua oficial do país</span></div>
+      </div>
+    </section>
+
+    <section id="visitar">
+      <div class="section-tag">02 · Locais a visitar</div>
+      <h2>Três lugares conhecidos</h2>
+      <p class="intro">A cidade tem muitos monumentos e espaços interessantes. Estes são três dos mais conhecidos e ajudam a perceber a sua história.</p>
+      <div class="cards">
+        <article class="card"><div class="number">01</div><h3>Palácio de Schönbrunn</h3><p>Antiga residência de verão da família imperial. É conhecido pelos jardins e pela arquitetura imponente.</p></article>
+        <article class="card"><div class="number">02</div><h3>Catedral de Santo Estêvão</h3><p>Um dos símbolos de Viena, situada no centro histórico e reconhecida pelo seu telhado colorido e pela torre alta.</p></article>
+        <article class="card"><div class="number">03</div><h3>Palácio de Hofburg</h3><p>Antiga residência dos Habsburgo. Atualmente, o complexo inclui museus e espaços oficiais.</p></article>
+      </div>
+    </section>
+
+    <section id="cultura">
+      <div class="section-tag">03 · Cultura e tradições</div>
+      <h2>Música, cafés e sabores</h2>
+      <div class="food">
+        <p>Viena tem uma ligação muito forte à música clássica. Compositores como Mozart, Beethoven e Strauss estão associados à história musical da cidade. Também é famosa pelos seus cafés tradicionais, onde se pode provar o <em>Apfelstrudel</em> (doce de maçã) e a <em>Sachertorte</em> (bolo de chocolate).</p>
+        <p>A cultura dos cafés vienenses faz parte da identidade local e é reconhecida como património cultural imaterial pela UNESCO.</p>
+      </div>
+    </section>
+  </main>
+  <footer>Projeto individual · Edmar · N.º 4 · Turma TDS · UC00617</footer>
+</body>
+</html>

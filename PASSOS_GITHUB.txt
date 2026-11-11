@@ -1,0 +1,15 @@
+PASSOS PARA TERMINAR NO GITHUB
+
+1. Criar um repositório público chamado projeto-viena.
+2. Adicionar estes quatro ficheiros: index.html, README.md, .gitignore e LICENSE.
+3. Criar branch "menu" e fazer uma alteração pequena no menu; commit e push.
+4. Abrir um Pull Request de menu para main, com título e descrição, e fazer merge.
+5. Criar branch "conteudo" e fazer uma alteração pequena numa secção do site; commit e push.
+6. Abrir um Pull Request de conteudo para main, com título e descrição, e fazer merge.
+7. Confirmar que main tem as duas alterações.
+8. Criar uma tag/release chamada v1.0.
+9. Abrir o GitHub Pages (Settings > Pages) se quiseres publicar o site; escolher main e /root.
+10. Copiar o link do repositório para o documento PDF e preencher os campos que faltam.
+11. Entregar o PDF e o link no Classroom.
+
+IMPORTANTE: Não escrevas no PDF que fizeste branches, pull requests ou tag antes de os teres criado mesmo.
